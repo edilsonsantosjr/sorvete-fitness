@@ -1,0 +1,223 @@
+*{
+   box-sizing: 0%;
+   text-decoration: none;
+}
+
+/* Possívis logo-cores:
+   verde (#3a8e5c / rgb 58 142 92), vermelho (#ac0121, rgb 172 1 33), laanja (#d7a14a, rgb 215 161 74).
+*/
+
+header{
+   height: 110px;  
+   width: 100%; 
+   background-color: #ac0121;  
+}
+
+nav{
+   height: 45px;
+   width: auto;
+   display: flex;
+   justify-content: start;
+   align-items: center;
+   gap: 36%;
+}
+
+#a-reseller{
+   width: auto;
+   height: auto;
+   padding: 0px;
+   margin: 0;
+}
+
+#a-reseller p{
+   width: 100%;
+   color: white;
+   margin-left: 2%;
+}
+
+#a-logo .logo{
+   width: 100px;
+}
+
+#container__search{
+   height: 45px;
+   display: flex;
+   align-items: center;
+}
+
+#search{
+   height: 1.2rem;
+   width: 90%;
+   display: flex;
+   justify-content: center;
+   color: white;
+   align-items: baseline;
+   gap: 6%;border:
+}
+
+#search input{
+   width: 400px;   
+}
+
+#car-login{
+   width: 10%;
+   display: flex;
+   justify-content: space-between;
+}
+
+main{
+   width: auto;
+   padding: 20px 40px 2px 40px;
+}
+
+#img__sorvetes{
+   width: 100%;
+}
+
+#section__products{  
+   width: auto;
+   display: flex;
+   flex-direction: column;
+}
+
+/* Início - Apresentação de produto*/
+#products__presentation{
+   /* height: 100%; */
+   /* width: auto; */
+   display: flex; 
+   justify-content: center;  
+   list-style-type: none;
+   padding: 0;
+}
+
+.ice__cream__product{
+   display: flex;
+   flex-direction: column;
+   align-items: center;   
+   /* padding: 0;
+   margin: 0;   */
+}
+
+.ice__cream__product img{
+   height: 100%;
+   width: 100%;
+   /* align-items: center; */
+}
+
+.ice__cream__product a{
+   display: flex;
+   flex-direction: column;
+}
+/* Fim - Apresentação de produto*/
+
+/* Início - Carrinho*/
+#list__cart__produts{ 
+   height: 3%;
+   width: auto;
+   display: flex; 
+   justify-content: center;  
+   padding: 0;
+   margin: 0;
+   list-style-type: none;
+}
+
+.cart__product{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.cart__product img{
+   height: 100%;
+   width: 100%;
+   padding: 0;
+   margin: 0;
+}
+
+.cart__product p{
+   height: auto;
+   font-size: 15px;
+   padding: 0;
+   margin: 0;
+}
+
+.cart__product button{
+   height: auto;
+   padding: 0;
+   margin: 0;
+}
+/* Fim - Carrinho*/
+
+/* Início - Imagem motivacional*/
+#fig__img__people{
+   height: auto;
+   width: auto;
+   margin: 1% 0 0 0;
+}
+
+#fig__img__people img{
+   height: 100%;
+   width: 100%;   
+}
+
+#fig__img__message{
+   height: auto;
+   width: auto;
+   margin: 0;
+   padding: 0;
+}
+
+#fig__img__message img{
+   height: 100%;
+   width: 100%;   
+}
+
+/* Fim - Imagem motivacional*/
+
+/* Footer*/
+footer{
+   height: auto;
+   padding: 0 40px 0 40px;
+   background-color: #ac0121;
+}
+
+#container__midias__sociais{
+   height: auto;
+   display: flex;  
+   justify-content: end;
+   gap: 32%; 
+}
+
+#container__midias__sociais figure img{
+   height: 31px;
+}
+
+#container__midias__sociais ul{
+   display: flex;
+   list-style-type: none;
+   gap: 2px;
+}
+
+#container__description{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 0;
+   margin: 0;
+}
+
+#container__description h2{ 
+   color: white;
+   margin: 0;
+}
+
+#container__description p{
+   margin: 0;
+   color: white;
+   text-align: justify;
+}
+
+#container__footer #copyright{ 
+   color: white;
+   text-align: center;
+}

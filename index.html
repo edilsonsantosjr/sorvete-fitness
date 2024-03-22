@@ -3,103 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="global.css" rel="stylesheet" >
+    <link href="style.css" rel="stylesheet" >
+    <script src="main.js" defer></script>
     <title>Sorvete Fitness</title>
 </head>
 <body>
     <header>
         <nav>
-            <a href="./src/pages/reseller/beareseller.html"><p>Seja um revendedor</p></a>
-            <a href="#"><img class="logo" src="./src/assets/images/logo.PNG" alt="Logo marca sorvete fitness"></a>
+            <a id="a-reseller" href="./src/pages/reseller/beareseller.html">
+                <p>Seja um revendedor</p></a>
+            <a id="a-logo" href="#">
+                <img class="logo" src="./src/assets/images/logo.PNG" alt="Logo marca sorvete fitness">
+            </a>
         </nav>
-        <div class="container__search">
-            <label for="ice_cream"></label>
-            <input type="text" id="ice_cream" name="ice_cream" placeholder="Encontre o seu sorvete aqui...">
-       
-            <div>
+        <div id="container__search">
+            <div id="search">
+                <label for="ice_cream">Buscar</label>
+                <input type="text" id="ice_cream" name="ice_cream" placeholder="Encontre o seu sorvete aqui...">
+            </div>
+            <div id="car-login">
                 <button>Login</button>
                 <button>Carrinho</button>
-            </div>
-            
+            </div>            
         </div>
     </header>
     <main>
-        <section class="main__img">
-            <img class="img__sorvetes" src="./src/assets/images/img_sorvetes.svg" alt="Imagem de sorvetes de sabores variados">
+        <section id="main__img">
+            <img id="img__sorvetes" src="./src/assets/images/img_sorvetes.svg" alt="Imagem de sorvetes de sabores variados">
             <p class="motivation__msg">Venha degustar um sorvete fit para alegrar o seu dia!</p>
         </section>
-        <section class="section__products">
-            <ul class="products__presentation">
-            <li class="ice__cream__product">
-                <img src="./src/assets/images/morango_sorvete.svg" alt="sorvete de morango">
-                <a class="more__information" href="#" target="_blank">Saiba mais</a>
-            </li>
-            <li class="ice__cream__product">
-                <img src="./src/assets/images/chocolate_sorvete.svg" alt="sorvete de chocolate">
-                <a class="more__information" href="#" target="_blank">Saiba mais</a>
-            </li>
-            <li class="ice__cream__product">
-                <img src="./src/assets/images/banana_sorvete.svg" alt="sorvete de banana">
-                <a class="more__information" href="#" target="_blank">Saiba mais</a>
-            </li>
-            <li class="ice__cream__product">
-                <img src="./src/assets/images/manga_sorvete.svg" alt="sorvete de manga">
-                <a class="more__information" href="#" target="_blank">Saiba mais</a>
-            </li>
+        <section id="section__products">
+            <ul id="products__presentation">
+                <li class="ice__cream__product">
+                    <img src="./src/assets/images/morango_sorvete.svg" alt="sorvete de morango">
+                    <a class="more__information" href="#" target="_blank">Saiba mais</a>
+                </li>
+                <li class="ice__cream__product">
+                    <img src="./src/assets/images/chocolate_sorvete.svg" alt="sorvete de chocolate">
+                    <a class="more__information" href="#" target="_blank">Saiba mais</a>
+                </li>
+                <li class="ice__cream__product">
+                    <img src="./src/assets/images/banana_sorvete.svg" alt="sorvete de banana">
+                    <a class="more__information" href="#" target="_blank">Saiba mais</a>
+                </li>
+                <li class="ice__cream__product">
+                    <img src="./src/assets/images/manga_sorvete.svg" alt="sorvete de manga">
+                    <a class="more__information" href="#" target="_blank">Saiba mais</a>
+                </li>
             </ul>
-            <section class="cart__products">
 
-            <ul class="list__cart__produts">
-                <li class="cart__products">
-                    <img class="cart__img" src="./src/assets/images/morango_sorvete.svg" alt="Sorvete de morango">
-                    <p class="title">Sorvete de Morango | 100g</p>
-                    <p class="price">R$<span> 20,99</span></p>
-                    <button>Adicionar ao carrinho</button>
-                </li>
-                <li class="cart__products">
-                    <img class="cart__img" src="./src/assets/images/chocolate_sorvete.svg" alt="Sorvete de Chocolate">
-                    <p class="title">Sorvete de Chocolate | 100g</p>
-                    <p class="price">R$<span> 18,99</span></p>
-                    <button>Adicionar ao carrinho</button>
-                </li>
-                <li class="cart__products">
-                    <img class="cart__img" src="./src/assets/images/banana_sorvete.svg" alt="Sorvete de Banana">
-                    <p class="title">Sorvete de Banana | 100g</p>
-                    <p class="price">R$<span> 15,90</span></p>
-                    <button>Adicionar ao carrinho</button>
-                </li>
-                <li class="cart__products">
-                    <img class="cart__img" src="./src/assets/images/manga_sorvete.svg" alt="Sorvete de Manga">
-                    <p class="title">Sorvete de Manga | 100g</p>
-                    <p class="price">R$<span> 17,90</span></p>
-                    <button>Adicionar ao carrinho</button>
-                </li>
-            </ul>
-                
-            <figure class="fig__img__people">                       
-           <img class="motivation__img overlay" src="./src/assets/images/img_motivacional.svg" alt="Imagem de pessoa feliz tomando um sorvete">
+            <!-- <section id="cart__products"> -->
+
+                <ul id="list__cart__produts">
+                    <li class="cart__product">
+                        <img class="cart__img" src="./src/assets/images/morango_sorvete.svg" alt="Sorvete de morango">
+                        <p class="title">Sorvete de Morango | 100g</p>
+                        <p class="price">R$<span> 20,99</span></p>
+                        <button>Adicionar ao carrinho</button>
+                    </li>
+                    <li class="cart__product">
+                        <img class="cart__img" src="./src/assets/images/chocolate_sorvete.svg" alt="Sorvete de Chocolate">
+                        <p class="title">Sorvete de Chocolate | 100g</p>
+                        <p class="price">R$<span> 18,99</span></p>
+                        <button>Adicionar ao carrinho</button>
+                    </li>
+                    <li class="cart__product">
+                        <img class="cart__img" src="./src/assets/images/banana_sorvete.svg" alt="Sorvete de Banana">
+                        <p class="title">Sorvete de Banana | 100g</p>
+                        <p class="price">R$<span> 15,90</span></p>
+                        <button>Adicionar ao carrinho</button>
+                    </li>
+                    <li class="cart__product">
+                        <img class="cart__img" src="./src/assets/images/manga_sorvete.svg" alt="Sorvete de Manga">
+                        <p class="title">Sorvete de Manga | 100g</p>
+                        <p class="price">R$<span> 17,90</span></p>
+                        <button>Adicionar ao carrinho</button>
+                    </li>
+                </ul>
+            <!-- </section>   -->
+
+            <figure id="fig__img__people">                       
+                <img id="motivation__img overlay" src="./src/assets/images/img_motivacional.svg" alt="Imagem de pessoa feliz tomando um sorvete">
             </figure>
-            <figure class="fig__img__message">
-            <img class="img__message"src="./src/assets/images/msg_feliz_hoje.svg" alt="Mensagem Motivacional">
-        </figure>
+
+            <figure id="fig__img__message">
+                <img class="img__message"src="./src/assets/images/msg_feliz_hoje.svg" alt="Mensagem Motivacional">
+            </figure>
+        </section>
     </main>
     <footer class="footer__description">
-            <div class="container__midias__sociais">
-                <figure class="fig__logo">
-                    <img class="logo" src="./src/assets/images/logo.PNG" alt="logomarca da sorvete fitness">
-                </figure>             
-                    <ul class="list__midias__sociais">
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Instagram</a></li>
-                        <li><a href="#">Youtube</a></li>
-                    </ul>                
+            <div id="container__midias__sociais">
+                <figure id="f-fig__logo">
+                    <img id="f-logo" src="./src/assets/images/logo.PNG" alt="logomarca da sorvete fitness">
+                </figure> 
+
+                <ul id="list__midias__sociais">
+                    <li><a href="#">
+                        <img src="./src/assets/images/facebook.png" alt="">
+                    </a></li>
+                    <li><a href="#">
+                        <img src="./src/assets/images/Instagran.png" alt="">
+                    </a></li>
+                    <li><a href="#">
+                        <img src="./src/assets/images/YTube.png" alt="">
+                    </a></li>
+                </ul>                
             </div>
 
-            <div class="container__footer">
-                <div class="container__description">
+            <div id="container__footer">
+                <div id="container__description">
                     <h2 class="about__sorvete__fitness">Sobre a Sorvete Fitness</h2>
                     <p class="descrition__about__sorvete__fitness">
-                        "Sorvete Fitness" é uma marca que se destaca por oferecer uma variedade de sorvetes saudáveis e nutritivos, projetados especialmente para pessoas que buscam manter um estilo de vida ativo e saudável. Ao contrário dos sorvetes convencionais, que muitas vezes são carregados de açúcar e gorduras saturadas, os sorvetes da Sorvete Fitness são formulados com ingredientes naturais e nutritivos.
+                        ©Sorvete Fitness é uma marca que se destaca por oferecer uma variedade de sorvetes saudáveis e nutritivos, projetados especialmente para pessoas que buscam manter um estilo de vida ativo e saudável. Ao contrário dos sorvetes convencionais, que muitas vezes são carregados de açúcar e gorduras saturadas, os sorvetes da Sorvete Fitness são formulados com ingredientes naturais e nutritivos.
 
                         Esses sorvetes são cuidadosamente elaborados com ingredientes como purê de frutas brasileiras, goma agar-agar (um espessante natural), cacau em pó e outros ingredientes saudáveis. Eles são especialmente formulados para atender às necessidades de pessoas com restrições alimentares, como diabetes ou colesterol alto, além de serem uma excelente opção para aqueles que praticam exercícios físicos regularmente e seguem uma dieta balanceada.
                         
@@ -108,21 +123,12 @@
                         Com um compromisso com a qualidade, a inovação e a saúde, a Sorvete Fitness se tornou uma marca reconhecida e confiável no mercado de sorvetes saudáveis, proporcionando aos seus clientes uma maneira deliciosa de manter um estilo de vida equilibrado e ativo.
                     </p>
                 </div>
-                <p>
+                <p id="copyright">
                     © Copyright 2024. Todos os direitos reservados. Sorvete Fitness Comércio Eletrônico LTDA
-                    32.143.933/0002-05. Endereço: Avenida do Sorriso, 145 Bairro do Sabor Alegre 
-                    Município: Alegrete - RS - CEP: 00807-000.
+                    32.143.933/0002-05<br> Avenida do Sorriso, 145 Bairro do Sabor Alegre 
+                    Município: Alegrete / RS - CEP: 00807-000
                 </p>
             </div>
-      
-        <div >
-           
-          
-                <p>FAQ</p>
-         
-        </div>
-    </footer>
-
-    <script src="main.js"></script>
+    </footer>    
 </body>
 </html>
