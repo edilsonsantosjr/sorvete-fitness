@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet" >
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <script src="main.js" defer></script>
     <title>Sorvete Fitness</title>
 </head>
@@ -11,19 +12,22 @@
     <header>
         <nav>
             <a id="a-reseller" href="./src/pages/reseller/beareseller.html">
-                <p>Seja um revendedor</p></a>
-            <a id="a-logo" href="#">
-                <img class="logo" src="./src/assets/images/logo.PNG" alt="Logo marca sorvete fitness">
+                <p>Seja um revendedor</p>
             </a>
         </nav>
         <div id="container__search">
+            <a id="a-logo" href="#">
+                <img class="logo" src="./src/assets/images/logo.PNG" alt="Logo marca sorvete fitness">
+            </a>
             <div id="search">
-                <label for="ice_cream">Buscar</label>
                 <input type="text" id="ice_cream" name="ice_cream" placeholder="Encontre o seu sorvete aqui...">
             </div>
             <div id="car-login">
-                <button>Login</button>
-                <button>Carrinho</button>
+                <div>
+                    <i class="fa fa-address-book-o"></i>
+                    <button class="login">Login</button>
+                </div>
+                <button class="carrinho">Carrinho</button>
             </div>            
         </div>
     </header>

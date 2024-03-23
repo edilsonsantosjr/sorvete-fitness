@@ -42,8 +42,13 @@ nav{
    margin-left: 2%;
 }
 
+#a-logo {
+   margin-left: 3%;
+}
+
 #a-logo .logo{
-   width: 100px;
+   width: 150px;
+   border-radius: 15px;
 }
 
 #container__search{
@@ -58,18 +63,24 @@ nav{
    display: flex;
    justify-content: center;
    color: white;
-   align-items: baseline;
+   align-items: center;
    gap: 6%;
-}
-
-#search input{
-   width: 400px;   
 }
 
 #car-login{
    width: 10%;
    display: flex;
    justify-content: space-between;
+   margin-right: 3%;
+}
+
+#car-login .fa {
+   width: 50px;
+   height: 50px;
+}
+
+#car-login .login {
+   color: #fff;
 }
 
 main{
@@ -95,6 +106,18 @@ main{
    justify-content: center;  
    list-style-type: none;
    padding: 0;
+}
+
+#ice_cream {
+
+   width: 70%;
+   height: 35px;
+   padding: 0px 0px 0px 15px;
+   border: 1px solid gray;
+   border-radius: 10px;
+
+   color: #000;
+   background-color: #fff;
 }
 
 .ice__cream__product{
