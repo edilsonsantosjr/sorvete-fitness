@@ -28,7 +28,7 @@ header{
    height: 100%;
 }
 
-.logo__car__login {
+.logo__login {
    height: 100%;
    display: flex;
    justify-content: space-between;
@@ -44,29 +44,15 @@ header{
    border-radius: 15px;
 }
 
-#search{
-   height: 1.2rem;
-   width: 90%;
-   display: flex;
-   justify-content: center;
-   color: white;
-   align-items: center;
-   gap: 6%;
-}
-
-#car-login{
-   width: 10%;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
+.login{
    margin-right: 3%;
 }
 
-#car-login .fa-regular {
+.login .fa-regular {
    color: white;
 }
 
-#car-login .login {
+.login .login__button {
    color: #fff;
 }
 
