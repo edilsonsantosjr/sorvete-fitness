@@ -1,40 +1,77 @@
-*{
-   box-sizing: 0%;
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Roboto Condensed', sans-serif;  
+   list-style: none;
+   border: none;
+   background: none;
    text-decoration: none;
+   color: inherit;
+}
+
+body {
+   background-color: #f3ecec;
 }
 
 /* Possívis logo-cores:
    verde (#3a8e5c / rgb 58 142 92), vermelho (#ac0121, rgb 172 1 33), laanja (#d7a14a, rgb 215 161 74).
 */
 
-body{
-   background-color: #f3ecec; 
-   opacity: 90%;
-}
-
 header{
-   height: 110px;  
-   width: auto; 
-   background-color: #ac0121;  
+   height: 135px;
+   background-color: #ac0121;
+   margin-bottom: 20px;
 }
 
-nav{
-   height: 45px;
-   width: auto;
+#container__header {
+   height: 100%;
+}
+
+.logo__car__login {
+   height: 100%;
    display: flex;
-   justify-content: center;
-   align-items: center;   
-   gap: 36%;
+   justify-content: space-between;
+   align-items: center;
+}
+
+#a-logo {
+   margin-left: 3%;
 }
 
 #a-logo .logo{
-   width: 100px;
+   width: 150px;
+   border-radius: 15px;
 }
 
-#container__login{
+#search{
+   height: 1.2rem;
+   width: 90%;
    display: flex;
-   justify-content: end;
-   padding-right: 1%;
+   justify-content: center;
+   color: white;
+   align-items: center;
+   gap: 6%;
+}
+
+#car-login{
+   width: 10%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-right: 3%;
+}
+
+#car-login .fa-regular {
+   color: white;
+}
+
+#car-login .login {
+   color: #fff;
+}
+
+#car-login .carrinho {
+   color: #fff;
 }
 
 main{
@@ -74,25 +111,49 @@ main{
    border-radius: 5px;
 }
 
-#btn #btn-block #btn-continuar{
+#button__create__acount {
    width: 299px;
-   height: 54px;
-   padding: 1px 6px 1px 6px;
-   border: 2px;  
+   height: 40px;
+   border-radius: 10px;
+   font-size: 20px;
+   background-color: #de2647;
+   color: #fff;
+}
+
+
+.privacy-policy {
+   text-align: center;
+   width: 299px;
+   margin-top: 15px;
+   font-size: 12px;
 }
 
 /* Footer*/
 footer{
    height: auto;
-   padding: 0 40px 0 40px;
+   margin-top: 7px;
+   padding: 15px 40px 15px 40px;
    background-color: #ac0121;
+}
+
+#f-fig__logo {
+   margin: 10px 0px;
+}
+
+#f-logo {
+   border-radius: 10px;
+}
+
+.descrition__about__sorvete__fitness {
+   font-size: 14px;
+   padding: 15px 0px;
 }
 
 #container__midias__sociais{
    height: auto;
    display: flex;  
    justify-content: end;
-   gap: 32%; 
+   gap: 39%; 
 }
 
 #container__midias__sociais figure img{
@@ -127,4 +188,5 @@ footer{
 #container__footer #copyright{ 
    color: white;
    text-align: center;
+   font-size: 14px;
 }

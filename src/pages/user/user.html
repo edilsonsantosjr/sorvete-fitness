@@ -4,21 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="user-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="main.js" defer></script>
     <title>Sorvete Fitness</title>
 </head>
 <body>
    <header>
-      <nav>
-          <a id="a-logo" href="#">
-              <img class="logo" src="/src/assets/images/logo.PNG" alt="Logo marca sorvete fitness">
-          </a>
-      </nav>
-      <div id="container__login">
-          <div id="car-login">
-              <button>Login</button>
-              <button>Carrinho</button>
-          </div>            
+      <div id="container__header">
+         <div class="logo__car__login">
+            <a id="a-logo" href="#">
+               <img class="logo" src="/src/assets/images/logo.PNG" alt="Logo marca sorvete fitness">
+           </a>
+           <div id="car-login">
+               <div>
+                   <i class="fa-regular fa-user"></i>
+                   <button class="login">Login</button>
+               </div>
+               <button class="carrinho">Carrinho</button>
+           </div>            
+         </div>
       </div>
   </header>
    <main>
@@ -140,7 +144,7 @@
                      <div id="form-email-password-confirm" class="invalid-feedback"></div>                                                          
                   </div>                           
                   
-                  <button id="btn btn-block btn-continuar" type="submit">
+                  <button id="button__create__acount" type="submit">
                      Criar conta
                      <i class="fa fa-chevron-right"></i>
                   </button>
