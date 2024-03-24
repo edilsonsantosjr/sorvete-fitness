@@ -24,7 +24,7 @@ nav{
    height: 45px;
    width: auto;
    display: flex;
-   justify-content: start;
+   justify-content: end;
    align-items: center;
    gap: 36%;
 }
@@ -32,8 +32,9 @@ nav{
 #a-reseller{
    width: auto;
    height: auto;
-   padding: 0px;
-   margin: 0;
+   padding: 3%;
+
+   font-size: small;
 }
 
 #a-reseller p{
@@ -74,12 +75,15 @@ nav{
    margin-right: 3%;
 }
 
-#car-login .fa {
-   width: 50px;
-   height: 50px;
+#car-login .fa-regular {
+   color: white;
 }
 
 #car-login .login {
+   color: #fff;
+}
+
+#car-login .carrinho {
    color: #fff;
 }
 
@@ -100,8 +104,6 @@ main{
 
 /* Início - Apresentação de produto*/
 #products__presentation{
-   /* height: 100%; */
-   /* width: auto; */
    display: flex; 
    justify-content: center;  
    list-style-type: none;
@@ -109,7 +111,6 @@ main{
 }
 
 #ice_cream {
-
    width: 70%;
    height: 35px;
    padding: 0px 0px 0px 15px;
@@ -123,15 +124,12 @@ main{
 .ice__cream__product{
    display: flex;
    flex-direction: column;
-   align-items: center;   
-   /* padding: 0;
-   margin: 0;   */
+   align-items: center; 
 }
 
 .ice__cream__product img{
    height: 100%;
    width: 100%;
-   /* align-items: center; */
 }
 
 .ice__cream__product a{
@@ -215,7 +213,7 @@ footer{
    height: auto;
    display: flex;  
    justify-content: end;
-   gap: 32%; 
+   gap: 39%; 
 }
 
 #container__midias__sociais figure img{
