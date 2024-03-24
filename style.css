@@ -10,14 +10,19 @@
    color: inherit;
 }
 
+body {
+   background-color: #f3ecec;
+}
+
 /* Possívis logo-cores:
    verde (#3a8e5c / rgb 58 142 92), vermelho (#ac0121, rgb 172 1 33), laanja (#d7a14a, rgb 215 161 74).
 */
 
 header{
-   height: 110px;  
+   height: 135px;  
    width: 100%; 
-   background-color: #ac0121;  
+   background-color: #ac0121;
+   margin-bottom: 20px;
 }
 
 nav{
@@ -92,6 +97,17 @@ main{
    padding: 20px 40px 2px 40px;
 }
 
+#img__sorvetes {
+   border-radius: 10px;
+   margin-bottom: 15px;
+}
+
+.motivation__msg {
+   text-align: center;
+   font-size: 20px;
+   margin-bottom: 20px;
+}
+
 #img__sorvetes{
    width: 100%;
 }
@@ -124,7 +140,14 @@ main{
 .ice__cream__product{
    display: flex;
    flex-direction: column;
-   align-items: center; 
+   align-items: center;
+   margin: 10px;
+   box-shadow: gray 2px 1px 10px 0px;
+   border-radius: 10px;
+}
+
+.ice__cream__img, .list__cart__produts__img {
+   border-radius: 10px 10px 0px 0px;
 }
 
 .ice__cream__product img{
@@ -153,6 +176,9 @@ main{
    display: flex;
    flex-direction: column;
    align-items: center;
+   margin: 10px;
+   box-shadow: gray 2px 1px 10px 0px;
+   border-radius: 10px;
 }
 
 .cart__product img{
@@ -185,7 +211,9 @@ main{
 
 #fig__img__people img{
    height: 100%;
-   width: 100%;   
+   width: 100%;
+   border-radius: 15px 15px 0px 0px;
+   margin-bottom: 7px;
 }
 
 #fig__img__message{
@@ -197,7 +225,8 @@ main{
 
 #fig__img__message img{
    height: 100%;
-   width: 100%;   
+   width: 100%;
+   border-radius: 0px 0px 20px 20px;
 }
 
 /* Fim - Imagem motivacional*/
@@ -205,8 +234,22 @@ main{
 /* Footer*/
 footer{
    height: auto;
-   padding: 0 40px 0 40px;
+   margin-top: 7px;
+   padding: 15px 40px 15px 40px;
    background-color: #ac0121;
+}
+
+#f-fig__logo {
+   margin: 10px 0px;
+}
+
+#f-logo {
+   border-radius: 10px;
+}
+
+.descrition__about__sorvete__fitness {
+   font-size: 14px;
+   padding: 15px 0px;
 }
 
 #container__midias__sociais{
@@ -248,4 +291,5 @@ footer{
 #container__footer #copyright{ 
    color: white;
    text-align: center;
+   font-size: 14px;
 }
