@@ -4,26 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet" >
-    <!-- <link rel="stylesheet" href="./src/assets/images/css-icon/all.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
     <script src="main.js" defer></script>
     <title>Sorvete Fitness</title>
 </head>
 <body>
     <header>
         <div id="container__search">
-            <a id="a-logo" href="#">
+            <a id="a-logo" href="index.html">
                 <img class="logo" src="./src/assets/images/logo.PNG" alt="Logo marca sorvete fitness">
             </a>
             <div id="search">
                 <input type="text" id="ice_cream" name="ice_cream" placeholder="Encontre o seu sorvete aqui...">
             </div>
             <div id="car-login">
-                <div>
+                <a href="/src/pages/login/login.html">
                     <i class="fa-regular fa-user"></i>
                     <button class="login">Login</button>
-                </div>
+                </a>
                 <button class="carrinho">Carrinho</button>
             </div>            
         </div>
@@ -53,35 +51,32 @@
                 </li>
             </ul>
 
-            <!-- <section id="cart__products"> -->
-
                 <ul id="list__cart__produts">
                     <li class="cart__product">
                         <img class="list__cart__produts__img" class="cart__img" src="./src/assets/images/morango_sorvete.svg" alt="Sorvete de morango">
                         <p class="title">Sorvete de Morango | 100g</p>
                         <p class="price">R$<span> 20,99</span></p>
-                        <button>Adicionar ao carrinho</button>
+                        <button class="add__car">Adicionar ao carrinho</button>
                     </li>
                     <li class="cart__product">
                         <img class="list__cart__produts__img" class="cart__img" src="./src/assets/images/chocolate_sorvete.svg" alt="Sorvete de Chocolate">
                         <p class="title">Sorvete de Chocolate | 100g</p>
                         <p class="price">R$<span> 18,99</span></p>
-                        <button>Adicionar ao carrinho</button>
+                        <button class="add__car">Adicionar ao carrinho</button>
                     </li>
                     <li class="cart__product">
                         <img class="list__cart__produts__img" class="cart__img" src="./src/assets/images/banana_sorvete.svg" alt="Sorvete de Banana">
                         <p class="title">Sorvete de Banana | 100g</p>
                         <p class="price">R$<span> 15,90</span></p>
-                        <button>Adicionar ao carrinho</button>
+                        <button class="add__car">Adicionar ao carrinho</button>
                     </li>
                     <li class="cart__product">
                         <img class="list__cart__produts__img" class="cart__img" src="./src/assets/images/manga_sorvete.svg" alt="Sorvete de Manga">
                         <p class="title">Sorvete de Manga | 100g</p>
                         <p class="price">R$<span> 17,90</span></p>
-                        <button>Adicionar ao carrinho</button>
+                        <button class="add__car">Adicionar ao carrinho</button>
                     </li>
                 </ul>
-            <!-- </section>   -->
 
             <figure id="fig__img__people">                       
                 <img id="motivation__img" src="./src/assets/images/img_motivacional.svg" alt="Imagem de pessoa feliz tomando um sorvete">

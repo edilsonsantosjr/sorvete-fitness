@@ -21,7 +21,7 @@ body {
 header{
    height: 135px;
    background-color: #ac0121;
-   margin-bottom: 20px;
+   margin-bottom: 10%;
 }
 
 #container__header {
@@ -44,22 +44,18 @@ header{
    border-radius: 15px;
 }
 
-.login{
+.cadastro{
    margin-right: 3%;
    cursor: pointer;
 }
 
-.login .fa-regular {
+.cadastro .fa-regular {
    color: white;
 }
 
-.login .login__button {
+.cadastro .cadastro__button {
    color: #fff;
    cursor: pointer;
-}
-
-#car-login .carrinho {
-   color: #fff;
 }
 
 main{
@@ -80,15 +76,6 @@ main{
    align-items: center;
 }
 
-#registration{
-   max-width: 325px;
-   display: flex;
-   flex-direction: column;
-
-   /* border: solid 2px black; */
-}
-
-
 .form-control{
    height: 30px;
    width: 299px;
@@ -99,21 +86,19 @@ main{
    border-radius: 5px;
 }
 
-#button__create__acount {
+#button__login {
    width: 299px;
    height: 40px;
+   margin-top: 8px;
+
    border-radius: 10px;
    font-size: 20px;
-   background-color: #de2647;
+   background-color: #ac0121;
    color: #fff;
 }
 
-
-.privacy-policy {
-   text-align: center;
-   width: 299px;
-   margin-top: 15px;
-   font-size: 12px;
+#button__login:hover{   
+   background-color: #de2647;
 }
 
 /* Footer*/
@@ -130,6 +115,10 @@ footer{
 
 #f-logo {
    border-radius: 10px;
+}
+
+#footer__description{
+   margin-top: 16%;
 }
 
 .descrition__about__sorvete__fitness {
