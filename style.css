@@ -71,6 +71,11 @@ header{
    margin-right: 3%;
 }
 
+.fa{
+   color: #fff;
+   font-size: 20px;
+}
+
 #car-login .fa-regular {
    color: white;
 }
