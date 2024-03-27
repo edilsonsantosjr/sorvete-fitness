@@ -24,21 +24,6 @@ header{
    background-color: #ac0121;
    margin-bottom: 20px;
 }
-
-/* #a-reseller{
-   width: auto;
-   height: auto;
-   padding: 3%;
-
-   font-size: small;
-} */
-
-/* #a-reseller p{
-   width: 100%;
-   color: white;
-   margin-left: 2%;
-} */
-
 #a-logo {
    margin-left: 3%;
 }
@@ -55,27 +40,44 @@ header{
 }
 
 #search{
-   height: 1.2rem;
+   /* height: 1.2rem; */
    width: 90%;
    display: flex;
    justify-content: center;
-   color: white;
    align-items: center;
-   gap: 6%;
+   flex-wrap: wrap;
+   color: white;
+   /* gap: 6%; */
+}
+
+#ice_cream {
+   width: 70%;
+   height: 35px;
+   padding: 0px 0px 0px 15px;
+   border: 1px solid gray;
+   border-radius: 10px;
+
+   color: #000;
+   background-color: #fff;
 }
 
 #btn__buscar{
-   width: 20px!important;
-   height: 22px;
-   background: url(http://www.devmedia.com.br/imagens/2013/buscar_grey.png) no-repeat;
-   cursor: pointer!important;
+   width: 30px; /*!important;*/
+   height: 30px;
+   /* cursor: pointer!important; */
    border: none;
-   transform: translateY(-50%);
-   padding: 0;
    position: relative;
-   top: -35px;
-   left: 280px;
-   background-color: green;   
+   left: -35px;
+   background-color: green;  
+}
+
+#btn__buscar button{
+   cursor: pointer;
+}
+
+#btn__buscar button img{
+   width: 100%;
+   height: 100%;
 }
 
 #car-login{
@@ -136,17 +138,6 @@ main{
    justify-content: center;  
    list-style-type: none;
    padding: 0;
-}
-
-#ice_cream {
-   width: 70%;
-   height: 35px;
-   padding: 0px 0px 0px 15px;
-   border: 1px solid gray;
-   border-radius: 10px;
-
-   color: #000;
-   background-color: #fff;
 }
 
 .ice__cream__product{
