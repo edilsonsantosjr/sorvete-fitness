@@ -72,54 +72,22 @@ main{
    justify-content: center;   
 }
 
-#tab-content{
-   width: 350px;
-   padding-left: 0 25% 0 25%;
+#about__sorvete__fitness{
    display: flex;
-   flex-direction: column;
-   align-items: center;
+   justify-content: center;
+   margin-bottom: 20px;
 }
 
-#registration{
-   max-width: 325px;
-   display: flex;
-   flex-direction: column;
-
-   /* border: solid 2px black; */
-}
-
-
-.form-control{
-   height: 30px;
-   width: 299px;
-   display: block;
-   padding: 6px 12px 6px 12px ;
-   margin: 6px 0 20px 0;
-   border: solid 1px;
-   border-radius: 5px;
-}
-
-#button__create__acount {
-   width: 299px;
-   height: 40px;
-   border-radius: 10px;
-   font-size: 20px;
-   background-color: #de2647;
-   color: #fff;
-}
-
-
-.privacy-policy {
-   text-align: center;
-   width: 299px;
-   margin-top: 15px;
-   font-size: 12px;
+#page p{
+   text-align: justify;
+   font-size: large;
+   padding: 0 60px 0 60px;
 }
 
 /* Footer*/
 footer{
    height: auto;
-   margin-top: 7px;
+   margin-top: 22px;
    padding: 15px 40px 15px 40px;
    background-color: #ac0121;
 }
