@@ -228,7 +228,7 @@ main{
 }
 
 .button__add__product:hover {
-   text-transform: uppercase;
+   /* text-transform: uppercase; */
    background-color: rgb(74, 172, 74);
    animation: animationOne;
    animation-duration: 600ms;

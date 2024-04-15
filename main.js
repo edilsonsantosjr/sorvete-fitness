@@ -70,7 +70,6 @@ const renderSorvetes = () => {
     })
 }
 
-
 // Open modal shop
 
 const modalShop = document.querySelector(".modal__shop");
@@ -95,7 +94,7 @@ const renderProductsShop = () => {
 
     modalShop.innerHTML += 
         `
-                <i onclick="closeInformationModalAndShop()"  class="fa-solid fa-circle-xmark icon__information__modal"></i>            
+            <i onclick="closeInformationModalAndShop()"  class="fa-solid fa-circle-xmark icon__information__modal"></i>            
         `;
 
     productsShop.map((sorvete) => {
