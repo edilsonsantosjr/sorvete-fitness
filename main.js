@@ -9,6 +9,8 @@ let ulSorvetes = document.querySelector("#products__presentation");
 
 const sorvetes = [];
 
+const productsShop = [];
+
 
 fetch("sorvetes.json").then((response) => {
     response.json().then((data) => {
@@ -19,11 +21,11 @@ fetch("sorvetes.json").then((response) => {
     })
 });
 
- 
 
+const openModalInformation = (id) => {
 
-const openModalInformation = () => {
     const modalMoreInformation = document.querySelector(".more__information__modal");
+
     if(modalMoreInformation.style.display == ''){
         modalMoreInformation.style.display = 'none';
     }
@@ -35,27 +37,46 @@ const openModalInformation = () => {
     } else if(modalMoreInformation.style.display == 'block'){
         modalMoreInformation.style.display = 'none';
     }
+
+    informationProduct(modalMoreInformation, id);
 };
 
+const addProductsOnCart = (id) => {
+    productsShop.push(sorvetes.find((sorvete) => sorvete.id == id));
+    console.log("Entrou!");
+    console.log(productsShop);
+}
+
+// Renderização dos sorvetes em html
+
 const renderSorvetes = () => {
-    console.log(sorvetes)
     sorvetes.map((sorvete) => {
         ulSorvetes.innerHTML += 
             `<li class="ice__cream__product">
                 <img class="ice__cream__img" src=${sorvete.imagemURL} alt="sorvete de morango">
-                <div class="product__card">
-                    <p>${sorvete.nome}</p>
-                    <p>${sorvete.litros}</p>
-                    <p onclick="openModalInformation()" class="more__information">Saiba mais...</p>
-                    <div class="more__information__modal" ></div>
+                <div onclick="addProductsOnCart(${sorvete.id})" class="information__and__buttonAdd">
+                    <div>
+                        <button class="button__add__product">Adicionar Ao carrinho</button>
+                    </div>
+                    <div class="product__card">
+                        <p>${sorvete.nome}</p>
+                        <p>${sorvete.litros}</p>
+                        <p onclick="openModalInformation(${sorvete.id})" class="more__information">Saiba mais...</p>
+                        <div class="more__information__modal" >
+                        </div>
+                    </div>
                 </div>
             </li>`
 
     })
 }
 
+
+// Open modal shop
+
 const modalShop = document.querySelector(".modal__shop");
 modalShop.style.display = 'none';
+
 
 const openModal = () => {
     console.log("Valeu!");
@@ -64,4 +85,54 @@ const openModal = () => {
     } else if(modalShop.style.display == 'block'){
         modalShop.style.display = 'none';
     }
+    renderProductsShop();
 };
+
+// Renderização dos sorvetes no carrinho
+
+const renderProductsShop = () => {
+
+    modalShop.innerHTML = '';
+
+    modalShop.innerHTML += 
+        `
+                <i onclick="closeInformationModalAndShop()"  class="fa-solid fa-circle-xmark icon__information__modal"></i>            
+        `;
+
+    productsShop.map((sorvete) => {
+        modalShop.innerHTML += 
+        `
+            <div>
+                <p>${sorvete.nome}</p>            
+            </div>
+        `;
+    })
+
+}
+
+
+const closeInformationModalAndShop = () => {
+    const modalMoreInformation = document.querySelector(".more__information__modal");
+
+    modalShop.style.display = 'none';
+    modalMoreInformation.style.display = 'none';
+};
+
+const informationProduct = (modalMoreInformation, id) => {
+    const sorveteSelecionado = sorvetes.find(sorvete => sorvete.id == id )
+    console.log(sorveteSelecionado);
+    modalMoreInformation.innerHTML = 
+    `
+        <div class="information__product">
+            <i onclick="closeInformationModal()"  class="fa-solid fa-circle-xmark icon__information__modal"></i>
+            <div class="img__information__product">
+                <img class="" src=${sorveteSelecionado.imagemURL} alt="sorvete de morango">
+            </div>
+            <div class="content__information__product">
+                <p>${sorveteSelecionado.nome}</p>
+                <p>${sorveteSelecionado.litros}</p>
+                <p>${sorveteSelecionado.ingredientes}</p>
+            </div>
+        </div>
+    `;
+}

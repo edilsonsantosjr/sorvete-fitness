@@ -137,6 +137,7 @@ main{
    display: flex; 
    justify-content: center;  
    list-style-type: none;
+   flex-wrap: wrap;
    padding: 0;
 }
 
@@ -202,10 +203,38 @@ main{
    margin: 0;
 }
 
+.information__and__buttonAdd {
+   display: flex;
+   align-items: center;
+}
+
+.button__add__product {
+   word-wrap: break-word;
+   width: 100px;
+   border-radius: 25px;
+   padding: 10px;
+   font-size: 10px;
+   cursor: pointer;
+   background-color: greenyellow;
+}
+
+.button__add__product:hover {
+   text-transform: uppercase;
+   background-color: green;
+   animation: animationOne;
+   animation-duration: 800ms;
+   color: #f5f5dc;
+}
+
 .more__information__modal {
-   width: 500px;
-   height: 500px;
-   background-color: rebeccapurple;
+   border-top: 2px solid #f3ecec;
+   border-left: 2px solid #f3ecec;
+   border-right: 2px solid #f3ecec;
+   box-shadow: gray 0px 0px 8px 2px;
+   border-radius: 5px;
+   width: 45%;
+   /*height: 500px;*/
+   background-color: #f3ecec;
    position: fixed;
    top: 50%;
    left: 50%;
@@ -214,6 +243,41 @@ main{
    animation: animationOne;
    animation-duration: 800ms;
 }
+
+.more__information {
+   cursor: pointer;
+}
+
+.information__product {
+   display: flex;
+   width: 100%;
+}
+
+.img__information__product {
+   width: 50%;
+}
+
+.information__product img {
+   width: 100%;
+}
+
+.content__information__product {
+   width: 50%;
+}
+
+.content__information__product p {
+   word-wrap: break-word;
+   text-align: center;
+}
+
+.icon__information__modal {
+   position: fixed;
+   right: -10px;
+   top: -10px;
+   font-size: 30px;
+   cursor: pointer;
+}
+
 
 /* .add__car{
    width: 80%;
