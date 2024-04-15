@@ -1,0 +1,31 @@
+{
+    "sorvetes": [
+        {
+            "nome": "sorvete de morango",
+            "imagemURL": "./src/assets/images/morango_sorvete.svg",
+            "litros": "1 Litro",
+            "descricao": "",
+            "ingredientes":"",
+            "Disponibilidade":"Sim",
+            "nutri":"Nutritivo"
+        },
+        {
+            "nome": "sorvete de chocolate",
+            "imagemURL": "./src/assets/images/chocolate_sorvete.svg",
+            "litros": "1 Litro",
+            "descricao": "",
+            "ingredientes":"",
+            "Disponibilidade":"Sim",
+            "nutri":"Nutritivo"
+        },
+        {
+            "nome": "sorvete de banana",
+            "imagemURL": "./src/assets/images/banana_sorvete.svg",
+            "litros": "1 Litro",
+            "descricao": "",
+            "ingredientes":"",
+            "Disponibilidade":"Sim",
+            "nutri":"Nutritivo"
+        }
+    ]
+}

@@ -149,6 +149,10 @@ main{
    border-radius: 10px;
 }
 
+.product__card {
+   padding: 15px;
+}
+
 .ice__cream__img, .list__cart__produts__img {
    border-radius: 10px 10px 0px 0px;
 }
@@ -196,6 +200,19 @@ main{
    font-size: 15px;
    padding: 0;
    margin: 0;
+}
+
+.more__information__modal {
+   width: 500px;
+   height: 500px;
+   background-color: rebeccapurple;
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   display: none;
+   animation: animationOne;
+   animation-duration: 800ms;
 }
 
 /* .add__car{
@@ -297,4 +314,22 @@ footer{
    color: white;
    text-align: center;
    font-size: 14px;
+}
+
+.modal__shop {
+   width: 500px;
+   height: 500px;
+   background-color: rebeccapurple;
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   display: none;
+   animation: animationOne;
+   animation-duration: 800ms;
+}
+
+@keyframes animationOne{
+   from{opacity: 1;}
+   from{opacity: 0;}
 }
