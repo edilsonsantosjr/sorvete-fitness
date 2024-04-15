@@ -58,7 +58,7 @@ const renderSorvetes = () => {
                     <div>
                         <button class="button__add__product">Adicionar Ao carrinho</button>
                     </div>
-                    <div class="product__card">
+                    <div class="product__card">                        
                         <p>${sorvete.nome}</p>
                         <p>${sorvete.litros}</p>
                         <p onclick="openModalInformation(${sorvete.id})" class="more__information">Saiba mais...</p>
@@ -67,7 +67,6 @@ const renderSorvetes = () => {
                     </div>
                 </div>
             </li>`
-
     })
 }
 
@@ -121,7 +120,7 @@ const closeInformationModal = () => {
 
 const informationProduct = (modalMoreInformation, id) => {
     const sorveteSelecionado = sorvetes.find(sorvete => sorvete.id == id )
-    console.log(sorveteSelecionado);
+    console.log('Sorvete selecionado: ' + sorveteSelecionado);
     modalMoreInformation.innerHTML = 
     `
         <div class="information__product">
@@ -129,10 +128,14 @@ const informationProduct = (modalMoreInformation, id) => {
             <div class="img__information__product">
                 <img class="" src=${sorveteSelecionado.imagemURL} alt="sorvete de morango">
             </div>
-            <div class="content__information__product">
-                <p>${sorveteSelecionado.nome}</p>
-                <p>${sorveteSelecionado.litros}</p>
-                <p>${sorveteSelecionado.ingredientes}</p>
+            <div class="content__information__product">                
+                <p id="presentation__name">${sorveteSelecionado.nome}</p><br>  
+                <p class="capitular">Conteúdo</P>             
+                <p>${sorveteSelecionado.litros}</p><br>
+                <p class="capitular">Ingredientes</p>
+                <p>${sorveteSelecionado.ingredientes}</p><br>
+                <p>Disponível</p> 
+                <p class="capitular">${sorveteSelecionado.disponibilidade}</p>                
             </div>
         </div>
     `;

@@ -7,7 +7,7 @@
             "litros": "1 Litro",
             "descricao": "",
             "ingredientes":"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-            "Disponibilidade":"Sim",
+            "disponibilidade":"Sim",
             "nutri":"Nutritivo"
         },
         {
@@ -16,8 +16,8 @@
             "imagemURL": "./src/assets/images/chocolate_sorvete.svg",
             "litros": "1 Litro",
             "descricao": "",
-            "ingredientes":"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-            "Disponibilidade":"Sim",
+            "ingredientes":"bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+            "disponibilidade":"Sim",
             "nutri":"Nutritivo"
         },
         {
@@ -26,8 +26,8 @@
             "imagemURL": "./src/assets/images/banana_sorvete.svg",
             "litros": "1 Litro",
             "descricao": "",
-            "ingredientes":"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-            "Disponibilidade":"Sim",
+            "ingredientes":"cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+            "disponibilidade":"Sim",
             "nutri":"Nutritivo"
         }
     ]

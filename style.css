@@ -215,20 +215,23 @@ main{
 }
 
 .button__add__product {
-   word-wrap: break-word;
-   width: 100px;
-   border-radius: 25px;
+   word-wrap: break-word;   
+   width: 80px;
+   height: 45px;
+   border-radius: 10px;
    padding: 10px;
    font-size: 10px;
    cursor: pointer;
-   background-color: greenyellow;
+   background-color: #ac0121;
+   color: #fff;
+   font-weight: bold;
 }
 
 .button__add__product:hover {
    text-transform: uppercase;
-   background-color: green;
+   background-color: rgb(74, 172, 74);
    animation: animationOne;
-   animation-duration: 800ms;
+   animation-duration: 600ms;
    color: #f5f5dc;
 }
 
@@ -269,11 +272,22 @@ main{
 
 .content__information__product {
    width: 50%;
+   padding: 10px 5px 10px 10px
 }
 
-.content__information__product p {
+.content__information__product p {   
    word-wrap: break-word;
-   text-align: center;
+   text-align: justify;
+}
+
+#presentation__name{
+   color: #ac0121;
+   font-size: 20px;
+   font-weight: bold;
+}
+
+.capitular{
+   font-weight: bold;
 }
 
 .icon__information__modal {
