@@ -100,8 +100,9 @@ const renderProductsShop = () => {
     productsShop.map((sorvete) => {
         modalShop.innerHTML += 
         `
-            <div>
-                <p>${sorvete.nome}</p>            
+            <div class="content__modal__shop">
+                <img class="modal__shop__img" src=${sorvete.imagemURL} alt="sorvete de morango">
+                <p>${sorvete.nome}</p>         
             </div>
         `;
     })

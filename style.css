@@ -401,9 +401,12 @@ footer{
 }
 
 .modal__shop {
-   width: 500px;
+   padding: 10px 20px 10px 20px;
+   width: 600px;
    height: 500px;
-   background-color: rebeccapurple;
+   background-color: #f3ecec;
+   border-radius: 10px;
+   box-shadow: gray 2px 1px 10px 0px;
    position: fixed;
    top: 50%;
    left: 50%;
@@ -411,6 +414,18 @@ footer{
    display: none;
    animation: animationOne;
    animation-duration: 800ms;
+}
+
+.modal__shop__img {
+   width: 80px;
+   border-radius: 10px;
+   margin-right: 10px;
+   margin-bottom: 10px;
+}
+
+.content__modal__shop {
+   display: flex;
+   align-items: center;
 }
 
 @keyframes animationOne{
