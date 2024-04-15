@@ -110,11 +110,12 @@ const renderProductsShop = () => {
 
 }
 
-
 const closeInformationModalAndShop = () => {
-    const modalMoreInformation = document.querySelector(".more__information__modal");
-
     modalShop.style.display = 'none';
+}
+
+const closeInformationModal = () => {
+    const modalMoreInformation = document.querySelector(".more__information__modal");
     modalMoreInformation.style.display = 'none';
 };
 
