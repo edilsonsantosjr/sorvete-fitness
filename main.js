@@ -1,9 +1,11 @@
 
 let obj = document.getElementById('img');
-console.log(btn);
+// console.log(obj);
 
-obj.onclick = () =>console.log('teste');
+// obj.onclick = () =>console.log('teste');
 
+let inputEmail = document.getElementById("registration__form__email");
+let inputSenha = document.getElementById("registration__form__password");
 
 let ulSorvetes = document.querySelector("#products__presentation");
 
@@ -139,4 +141,10 @@ const informationProduct = (modalMoreInformation, id) => {
             </div>
         </div>
     `;
+}
+
+if(inputEmail != null){
+inputEmail.addEventListener("focus", ()=>{
+    inputEmail.style.backgroundColor = "lightgreen";    
+})
 }
