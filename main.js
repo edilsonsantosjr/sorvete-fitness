@@ -142,9 +142,3 @@ const informationProduct = (modalMoreInformation, id) => {
         </div>
     `;
 }
-
-if(inputEmail != null){
-inputEmail.addEventListener("focus", ()=>{
-    inputEmail.style.backgroundColor = "lightgreen";    
-})
-}

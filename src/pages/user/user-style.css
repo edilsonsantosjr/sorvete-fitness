@@ -168,6 +168,23 @@ footer{
    text-align: justify;
 }
 
+.form_group_required{
+   display: flex;
+   justify-content: space-between;
+}
+
+.invalid_feedback{
+   display: none;
+   color: #fff;   
+   font-size: small;
+   background-color: #ac0121;
+   border-radius: 5%;
+}
+
+.visible {
+   display: block;
+ }
+
 #container__footer #copyright{ 
    color: white;
    text-align: center;

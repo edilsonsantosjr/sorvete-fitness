@@ -167,3 +167,30 @@ footer{
    text-align: center;
    font-size: 14px;
 }
+
+.form_group_required{
+   display: flex;
+   justify-content: space-between;
+}
+
+.invalid_feedback{
+   display: none;
+   color: #fff;   
+   font-size: small;
+   background-color: #ac0121;
+   border-radius: 5%;
+}
+
+.visible {
+   display: block;
+ }
+
+#lb_control_pwd{   
+   color: #ac0121;
+}
+
+#msg_required_field{
+   padding-top: 3%;
+   font-size: 9px;
+}
+
