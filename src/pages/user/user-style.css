@@ -84,10 +84,17 @@ main{
    max-width: 325px;
    display: flex;
    flex-direction: column;
-
-   /* border: solid 2px black; */
 }
 
+#registration_form_password_confirm{
+   margin-bottom: 0;
+}
+
+#msg_required_field{
+   padding-top: 1%;
+   padding-bottom: 6%;
+   font-size: 9px;
+}
 
 .form-control{
    height: 30px;

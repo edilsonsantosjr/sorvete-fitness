@@ -185,9 +185,9 @@ footer{
    display: block;
  }
 
-#lb_control_pwd{   
+/* #lb_control_pwd{   
    color: #ac0121;
-}
+} */
 
 #msg_required_field{
    padding-top: 3%;

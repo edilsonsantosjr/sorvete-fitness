@@ -33,7 +33,7 @@
                   <div class="form-group">
                      <div class="form_group_required">
                         <label class="form-control-label" for="registration_form_fname">                        
-                           Nome
+                           Nome*
                         </label>
                         <div id="form_name_error" class="invalid_feedback">
                            
@@ -45,7 +45,7 @@
                   <div class="form-group">
                      <div class="form_group_required">
                         <label class="form-control-label" for="registration_form_lname">
-                           Sobrenome
+                           Sobrenome*
                         </label>
                         <div id="form_lname_error" class="invalid_feedback">
                            
@@ -85,7 +85,7 @@
                   <div class="form-group">
                      <div class="form_group_required">
                         <label class="form-control-label" for="registration_form_cpf">
-                           CPF  
+                           CPF*  
                         </label>
                         
                         <div id="form_cpf_error" class="invalid_feedback">
@@ -111,7 +111,7 @@
                   <div class="form-group">
                      <div class="form_group_required">
                         <label class="form-control-label" for="registration_form_email">
-                           Email
+                           Email*
                         </label> 
                         <div id="form_email_error" class="invalid_feedback">
                            
@@ -124,7 +124,7 @@
                   <div class="form-group">
                      <div class="form_group_required">
                         <label class="form-control-label" for="registration_form_email_confirm">
-                           Confirmar Email
+                           Confirmar Email*
                         </label> 
                         <div id="form_email_confirm_error" class="invalid_feedback">
 
@@ -136,7 +136,7 @@
                   <div class="form-group">
                      <div class="form_group_required">
                         <label class="form-control-label" for="registration_form_password">
-                           Senha
+                           Senha*
                         </label> 
                         <div id="form_password_error" class="invalid_feedback">
 
@@ -146,10 +146,10 @@
                      <input type="password" class="form-control" id="registration_form_password" name="dwfrm_profile_login_password">                                                                              
                   </div>
 
-                  <div class="form-group">
+                  <div class="form-group" id="form_group_pwd">
                      <div class="form_group_required">
                         <label class="form-control-label" for="registration_form_password_confirm">
-                           Confirmar Senha
+                           Confirmar Senha*
                         </label> 
                         <div id="form_password_confirm" class="invalid_feedback">
 
@@ -157,7 +157,11 @@
                      </div>
 
                      <input type="password" class="form-control" id="registration_form_password_confirm" name="dwfrm_profile_login_passwordconfirm">                                                                              
-                  </div>                           
+                  </div>    
+                  
+                  <p id="msg_required_field">
+                     Os campos marcados com * são de preenchimento obrigatório.
+                  </p>                   
                   
                   <button id="button__create__acount" type="submit">
                      Criar conta
