@@ -21,7 +21,7 @@ body {
 header{
    height: 135px;
    background-color: #ac0121;
-   margin-bottom: 10%;
+   margin-bottom: 20px;
 }
 
 #container__header {
@@ -44,18 +44,22 @@ header{
    border-radius: 15px;
 }
 
-.cadastro{
+.login{
    margin-right: 3%;
    cursor: pointer;
 }
 
-.cadastro .fa-regular {
+.login .fa-regular {
    color: white;
 }
 
-.cadastro .cadastro__button {
+.login .login__button {
    color: #fff;
    cursor: pointer;
+}
+
+#car-login .carrinho {
+   color: #fff;
 }
 
 main{
@@ -68,43 +72,22 @@ main{
    justify-content: center;   
 }
 
-#tab-content{
-   width: 350px;
-   padding-left: 0 25% 0 25%;
+#about__sorvete__fitness{
    display: flex;
-   flex-direction: column;
-   align-items: center;
+   justify-content: center;
+   margin-bottom: 20px;
 }
 
-.form-control{
-   height: 30px;
-   width: 299px;
-   display: block;
-   padding: 6px 12px 6px 12px ;
-   margin: 6px 0 20px 0;
-   border: solid 1px;
-   border-radius: 5px;
-}
-
-#button__login {
-   width: 299px;
-   height: 40px;
-   margin-top: 8px;
-
-   border-radius: 10px;
-   font-size: 20px;
-   background-color: #ac0121;
-   color: #fff;
-}
-
-#button__login:hover{   
-   background-color: #de2647;
+#page p{
+   text-align: justify;
+   font-size: large;
+   padding: 0 60px 0 60px;
 }
 
 /* Footer*/
 footer{
    height: auto;
-   margin-top: 7px;
+   margin-top: 22px;
    padding: 15px 40px 15px 40px;
    background-color: #ac0121;
 }
@@ -116,15 +99,6 @@ footer{
 #f-logo {
    border-radius: 10px;
 }
-
-#footer__description{
-   margin-top: 16%;
-}
-
-/* .descrition__about__sorvete__fitness {
-   font-size: 14px;
-   padding: 15px 0px;
-} */
 
 #container__midias__sociais{
    height: auto;
@@ -167,30 +141,3 @@ footer{
    text-align: center;
    font-size: 14px;
 }
-
-.form_group_required{
-   display: flex;
-   justify-content: space-between;
-}
-
-.invalid_feedback{
-   display: none;
-   color: #fff;   
-   font-size: small;
-   background-color: #ac0121;
-   border-radius: 5%;
-}
-
-.visible {
-   display: block;
- }
-
-/* #lb_control_pwd{   
-   color: #ac0121;
-} */
-
-#msg_required_field{
-   padding-top: 3%;
-   font-size: 9px;
-}
-

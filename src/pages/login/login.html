@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="login-style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <script src="main.js" defer></script>
+    <!-- <script src="/src/js/login.js" defer></script> -->
+    <script src="login.js" defer></script>
     <title>Sorvete Fitness</title>
 </head>
 <body>
@@ -25,32 +26,42 @@
    <main>
       <section id="page" data-action="Login-Show" data-query-string="register=true">                                    
          <div id="tab-content">
-            <div id="custom__login--registerForm">                        
+            <div id="custom__login--registerForm">                                
                <form id="registration" action="" method="post" name="dwfrm_profile" novalidate="">
-                  <div class="form-group required">
-                     <label class="form-control-label" for="registration-form-email">
-                        Email
-                     </label> 
-                     <input type="text" class="form-control" id="registration-form-email" data-missing-error="Este campo é obrigatorio" 
-                              data-pattern-mismatch="Por favor inserir um endereço de e-mail válido" data-range-error="Deve conter 50 caracteres ou menos" 
-                              aria-describedby="form-email-error" name="dwfrm_profile_customer_email" required="" aria-required="true" value="" maxlength="50" 
-                              pattern="^[\w.%+-]+@[\w.-]+\.[\w]{2,6}$">
-                     <div id="form-email-error" class="invalid-feedback"></div>                                                          
+                  <div class="form-group">
+                     <div class="form_group_required">
+                        <label class="form_control_label" for="registration__form__email">
+                           Email*
+                        </label> 
+                        <div id="form_email_error" class="invalid_feedback">
+                           
+                        </div>  
+                     </div>                    
+                     <input type="text" class="form-control" id="registration__form__email"
+                            name="email" required="true" aria-required="true" value="" maxlength="50" pattern="^[\w.%+-]+@[\w.-]+\.[\w]{2,6}$">                                                         
                   </div>
-                  <div class="form-group required">
-                     <label class="form-control-label" for="registration-form-password">
-                        Senha
-                     </label> 
-                     <input type="password" class="form-control" id="registration-form-password" data-missing-error="Este campo é obrigatorio" 
-                              data-range-error="Este campo precisa de 8 a 255 caracteres" aria-describedby="form-password-error" 
-                              autocomplete="off" name="dwfrm_profile_login_password" required="" aria-required="true" value="" maxlength="255" minlength="8">
-                     <div id="form-email-password" class="invalid-feedback"></div>                                                          
-                  </div>                                            
+                  <div class="form-group">
+                     <div class="form_group_required">
+                        <label class="form_control_label" id="lb_control_pwd" for="registration_form_password">
+                           Senha*
+                        </label>
+                        <div id="form_pwd_error" class="invalid_feedback">
+                        
+                        </div>                         
+                     </div> 
+                     <input type="password" class="form-control" id="registration_form_password" name="dwfrm_profile_login_password" required="" aria-required="true" value="" maxlength="255" minlength="8">
+                     <div id="form-email-password" class="invalid_feedback"></div>                                                          
+                  </div>    
+
                   <button id="button__login" type="submit">
                      Logar
                      <i class="fa fa-chevron-right"></i>
-                  </button>               
-               </form>                           
+                  </button>              
+                              
+               </form> 
+               <p id="msg_required_field">
+                  Os campos marcados com * são de preenchimento obrigatório.
+               </p>                          
             </div>  
          </div>
       </section>        
@@ -75,18 +86,6 @@
       </div>
 
       <div id="container__footer">
-          <div id="container__description">
-              <h2 class="about__sorvete__fitness">Sobre a Sorvete Fitness</h2>
-              <p class="descrition__about__sorvete__fitness">
-                  ©Sorvete Fitness é uma marca que se destaca por oferecer uma variedade de sorvetes saudáveis e nutritivos, projetados especialmente para pessoas que buscam manter um estilo de vida ativo e saudável. Ao contrário dos sorvetes convencionais, que muitas vezes são carregados de açúcar e gorduras saturadas, os sorvetes da Sorvete Fitness são formulados com ingredientes naturais e nutritivos.
-
-                  Esses sorvetes são cuidadosamente elaborados com ingredientes como purê de frutas brasileiras, goma agar-agar (um espessante natural), cacau em pó e outros ingredientes saudáveis. Eles são especialmente formulados para atender às necessidades de pessoas com restrições alimentares, como diabetes ou colesterol alto, além de serem uma excelente opção para aqueles que praticam exercícios físicos regularmente e seguem uma dieta balanceada.
-                  
-                  Além disso, a Sorvete Fitness se destaca por oferecer uma ampla variedade de sabores deliciosos, garantindo que haja uma opção para todos os gostos. Desde os clássicos sabores de frutas até combinações mais exóticas, os sorvetes da Sorvete Fitness proporcionam uma experiência refrescante e satisfatória, sem comprometer a saúde.
-                  
-                  Com um compromisso com a qualidade, a inovação e a saúde, a Sorvete Fitness se tornou uma marca reconhecida e confiável no mercado de sorvetes saudáveis, proporcionando aos seus clientes uma maneira deliciosa de manter um estilo de vida equilibrado e ativo.
-              </p>
-          </div>
           <p id="copyright">
               © Copyright 2024. Todos os direitos reservados. Sorvete Fitness Comércio Eletrônico LTDA
               32.143.933/0002-05<br> Avenida do Sorriso, 145 Bairro do Sabor Alegre 

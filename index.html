@@ -16,70 +16,37 @@
             </a>
             <div id="search">
                 <input type="text" id="ice_cream" name="ice_cream" placeholder="Encontre o seu sorvete aqui...">
+                <div id="btn__buscar" >
+                    <button id="btn" type="submit">
+                        <img id="img" src="./src/assets/images/lupa.png" alt="">
+                    </button>
+                </div>
             </div>
             <div id="car-login">
-                <a href="/src/pages/login/login.html">
+                <a id="sobre" href="./src/pages/about/about.html">Sobre</a>
+                <a href="./src/pages/login/login.html">
                     <i class="fa-regular fa-user"></i>
-                    <button class="login">Login</button>
+                    <button class="login">Login</button>                    
                 </a>
-               <a href="#">
+               <a onclick="openModal()" href="#">
                  <i class="fa fa-shopping-cart" aria-hidden="true">
-               </i></a>               
+               </i></a>
+               <div class="modal__shop">
+
+               </div>
             </div>            
         </div>
     </header>
     <main>
         <section id="main__img">
             <img id="img__sorvetes" src="./src/assets/images/img_sorvetes.svg" alt="Imagem de sorvetes de sabores variados">
-            <p class="motivation__msg">Venha degustar um sorvete fit para alegrar o seu dia!</p>
+            <p class="motivation__msg">Mais sabor, mais saúde. Deguste seu dia.</p>
         </section>
         <section id="section__products">
             <ul id="products__presentation">
-                <li class="ice__cream__product">
-                    <img class="ice__cream__img" src="./src/assets/images/morango_sorvete.svg" alt="sorvete de morango">
-                    <a class="more__information" href="#" target="_blank">Saiba mais</a>
-                </li>
-                <li class="ice__cream__product">
-                    <img class="ice__cream__img" src="./src/assets/images/chocolate_sorvete.svg" alt="sorvete de chocolate">
-                    <a class="more__information" href="#" target="_blank">Saiba mais</a>
-                </li>
-                <li class="ice__cream__product">
-                    <img class="ice__cream__img" src="./src/assets/images/banana_sorvete.svg" alt="sorvete de banana">
-                    <a class="more__information" href="#" target="_blank">Saiba mais</a>
-                </li>
-                <li class="ice__cream__product">
-                    <img class="ice__cream__img" src="./src/assets/images/manga_sorvete.svg" alt="sorvete de manga">
-                    <a class="more__information" href="#" target="_blank">Saiba mais</a>
-                </li>
+                
             </ul>
-
-                <ul id="list__cart__produts">
-                    <li class="cart__product">
-                        <img class="list__cart__produts__img" class="cart__img" src="./src/assets/images/morango_sorvete.svg" alt="Sorvete de morango">
-                        <p class="title">Sorvete de Morango | 100g</p>
-                        <p class="price">R$<span> 20,99</span></p>
-                        <button class="add__car">Adicionar ao carrinho</button>
-                    </li>
-                    <li class="cart__product">
-                        <img class="list__cart__produts__img" class="cart__img" src="./src/assets/images/chocolate_sorvete.svg" alt="Sorvete de Chocolate">
-                        <p class="title">Sorvete de Chocolate | 100g</p>
-                        <p class="price">R$<span> 18,99</span></p>
-                        <button class="add__car">Adicionar ao carrinho</button>
-                    </li>
-                    <li class="cart__product">
-                        <img class="list__cart__produts__img" class="cart__img" src="./src/assets/images/banana_sorvete.svg" alt="Sorvete de Banana">
-                        <p class="title">Sorvete de Banana | 100g</p>
-                        <p class="price">R$<span> 15,90</span></p>
-                        <button class="add__car">Adicionar ao carrinho</button>
-                    </li>
-                    <li class="cart__product">
-                        <img class="list__cart__produts__img" class="cart__img" src="./src/assets/images/manga_sorvete.svg" alt="Sorvete de Manga">
-                        <p class="title">Sorvete de Manga | 100g</p>
-                        <p class="price">R$<span> 17,90</span></p>
-                        <button class="add__car">Adicionar ao carrinho</button>
-                    </li>
-                </ul>
-
+            
             <figure id="fig__img__people">                       
                 <img id="motivation__img" src="./src/assets/images/img_motivacional.svg" alt="Imagem de pessoa feliz tomando um sorvete">
             </figure>
@@ -109,18 +76,6 @@
             </div>
 
             <div id="container__footer">
-                <div id="container__description">
-                    <h2 class="about__sorvete__fitness">Sobre a Sorvete Fitness</h2>
-                    <p class="descrition__about__sorvete__fitness">
-                        ©Sorvete Fitness é uma marca que se destaca por oferecer uma variedade de sorvetes saudáveis e nutritivos, projetados especialmente para pessoas que buscam manter um estilo de vida ativo e saudável. Ao contrário dos sorvetes convencionais, que muitas vezes são carregados de açúcar e gorduras saturadas, os sorvetes da Sorvete Fitness são formulados com ingredientes naturais e nutritivos.
-
-                        Esses sorvetes são cuidadosamente elaborados com ingredientes como purê de frutas brasileiras, goma agar-agar (um espessante natural), cacau em pó e outros ingredientes saudáveis. Eles são especialmente formulados para atender às necessidades de pessoas com restrições alimentares, como diabetes ou colesterol alto, além de serem uma excelente opção para aqueles que praticam exercícios físicos regularmente e seguem uma dieta balanceada.
-                        
-                        Além disso, a Sorvete Fitness se destaca por oferecer uma ampla variedade de sabores deliciosos, garantindo que haja uma opção para todos os gostos. Desde os clássicos sabores de frutas até combinações mais exóticas, os sorvetes da Sorvete Fitness proporcionam uma experiência refrescante e satisfatória, sem comprometer a saúde.
-                        
-                        Com um compromisso com a qualidade, a inovação e a saúde, a Sorvete Fitness se tornou uma marca reconhecida e confiável no mercado de sorvetes saudáveis, proporcionando aos seus clientes uma maneira deliciosa de manter um estilo de vida equilibrado e ativo.
-                    </p>
-                </div>
                 <p id="copyright">
                     © Copyright 2024. Todos os direitos reservados. Sorvete Fitness Comércio Eletrônico LTDA
                     32.143.933/0002-05<br> Avenida do Sorriso, 145 Bairro do Sabor Alegre 

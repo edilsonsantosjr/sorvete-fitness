@@ -84,10 +84,17 @@ main{
    max-width: 325px;
    display: flex;
    flex-direction: column;
-
-   /* border: solid 2px black; */
 }
 
+#registration_form_password_confirm{
+   margin-bottom: 0;
+}
+
+#msg_required_field{
+   padding-top: 1%;
+   padding-bottom: 6%;
+   font-size: 9px;
+}
 
 .form-control{
    height: 30px;
@@ -132,11 +139,6 @@ footer{
    border-radius: 10px;
 }
 
-.descrition__about__sorvete__fitness {
-   font-size: 14px;
-   padding: 15px 0px;
-}
-
 #container__midias__sociais{
    height: auto;
    display: flex;  
@@ -172,6 +174,23 @@ footer{
    color: white;
    text-align: justify;
 }
+
+.form_group_required{
+   display: flex;
+   justify-content: space-between;
+}
+
+.invalid_feedback{
+   display: none;
+   color: #fff;   
+   font-size: small;
+   background-color: #ac0121;
+   border-radius: 5%;
+}
+
+.visible {
+   display: block;
+ }
 
 #container__footer #copyright{ 
    color: white;
